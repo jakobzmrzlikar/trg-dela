@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="sl">
+<head>
+<title>E-poslovalnica</title>
+
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Testni podatek">
+<meta name="author" content="Creatim RP">
+<meta name="robots" content="all">
+
+<meta name="viewport" content="device-width=device-width" />
+<meta name="viewport" content="user-scalable=yes" />
+<meta name="viewport" content="initial-scale=1" />
+
+<link type="text/css" rel="stylesheet/less" media="all" href="resources/less/main.less.php?v=20190906001">
+<link type="text/css" rel="stylesheet" media="print" href="resources/css/print.css?v=20190906001">
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/chosen.css?v=20190906001">
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/prettyPhoto.css?v=20190906001">
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/featherlight.min.css?v=20190906001">
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/multiple-select.css?v=20190906001">
+<link type="text/css" rel="stylesheet" media="screen" href="resources/css/candlestick.min.css?v=20190906001"/>
+<script src="resources/js/jquery-1.9.1.min.js?v=20190906001"></script>
+<script src="resources/js/jquery-ui.min.js?v=20190906001"></script>
+<script type="text/javascript">//var less=less||{};less.env='development';</script>
+<script src="resources/js/less.js?v=20190906001"></script>
+<script src="resources/js/chosen.jquery.min.js?v=20190906001"></script>
+<script src="resources/js/jquery.multiple.select.js?v=20190906001"></script>
+<script src="resources/js/jquery.matchheight.min.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/main.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/mmenu.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/jquery.history.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/os.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/jquery.prettyPhoto.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/uploader/SimpleAjaxUploader.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/featherlight.min.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/nouislider.min.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/wNumb.min.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/candlestick.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/hammer.min.js?v=20190906001"></script>
+<script type="text/javascript" src="resources/js/jquery.hammer.js?v=20190906001"></script>
+
+
+<!--[if lte IE 10]>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<![endif]-->
+<!--[if IE 9]>
+	<style type="text/css" media="all">@import url(css/ie9.css);</style>
+<![endif]-->
+<!--[if lte IE 8]>
+	<script type="text/javascript" src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<style type="text/css" media="all">@import url(css/ie8.css);</style>
+<![endif]-->
+<!--[if lte IE 7]>
+	<style type="text/css" media="all">@import url(css/ie6.css);</style>
+	<script src="resources/js/ie6.js" type="text/javascript"></script> 
+<![endif]-->
+
+
+</head>
+
+<body id="frontPage" class="responsive <!--menuActive-->" style="background-image : url(profilephoto.php?l=2);">
+<div>
+
+	<div class="siteShadow rp960">
+		<header class="header">
+			<div class="headerWrap">
+				<h3 class="pageTitle" itemscope itemtype="http://schema.org/Corporation">
+					<a href="osebna_stran.php" class="url" rel="home" itemprop="url" title="Na prvo stran">
+						<img class="logo" src="resources/images/logos/logo_studentski_servis.png" alt="Logo Študentski servis" itemprop="image" /> 
+						<img class="osebniServis" src="resources/images/logos/logo_osebni_servis.png" alt="Osebni servis" itemprop="image" /> 
+						<span class="brand" itemprop="brand">Študentski servis</span>
+						<span id="strapline" itemprop="description">Agencija za izvajanje dejavnosti posredovanja dela</span>
+						<span class="fn org" itemprop="fn org">ŠS d.o.o.</span>
+					</a>
+				</h3>
+				<p class="forScreenReaders"><a href="#content" title="Skip all links">Skip to main content</a></p>
+				<div class="navigation" itemscope itemtype="http://schema.org/WebSite" role="navigation">
+					<nav aria-label="main" itemscope itemtype="http://schema.org/SiteNavigationElement">
+						<ul >
+							<li class="dropDown selected" aria-level="1" >
+								<a href="prosta_dela.php" rel="tag"><span><small>&gt;</small> Prosta dela</span></a>
+								<div class="drop">
+									<div class="dropWrap">	
+										<ul>
+											<li aria-level="2" class="selected"><a href="prosta_dela.php"><span>Vsa prosta dela</span></a></li>
+											<li aria-level="2"><a href="moje_delo.php"><span id="aktivniiskalcinaziv">Delo za aktivne iskalce</span></a></li>
+											<li aria-level="2"><a href="prosta_dela.php?kosarica=1"><span>Izbor del</span></a></li>
+											<li aria-level="2"><a href="moje_izkusnje.php"><span>Moje izkušnje</span></a></li>
+										</ul>
+									</div>
+								</div>				
+							</li>
+							<li aria-level="1"  >
+								<a href="potrebujem_napotnico.php" rel="tag"><span><small>&gt;</small> Napotnice</span></a>
+								<div class="drop">
+									<div class="dropWrap">	
+										<ul>
+											<li aria-level="2"><a href="izdane_napotnice.php"><span>Izdane napotnice</span></a></li>
+											<li aria-level="2"><a href="potrebujem_napotnico.php"><span>Naročilo nove napotnice</span></a></li>
+										</ul>
+									</div>
+								</div>			
+							</li>
+							<li aria-level="1"  >
+								<a href="pregled_zasluzkov.php" rel="tag"><span><small>&gt;</small> Zaslužki</span></a>
+								<div class="drop">
+									<div class="dropWrap">	
+										<ul>
+											<li aria-level="2"><a href="pregled_zasluzkov.php"><span>Pregled zaslužkov</span></a></li>
+											<li aria-level="2"><a href="pokojninska_doba.php"><span>Pokojninska doba</span></a></li>
+										</ul>
+									</div>
+								</div>			
+							</li>										
+							<li aria-level="1" >
+								<a href="dohodnina_letno_obvestilo.php" rel="tag"><span><small>&gt;</small> Dohodnina</span></a>
+								<div class="drop">
+									<div class="dropWrap">	
+										<ul>
+											<li aria-level="2"><a href="dohodnina_pogosta_vprasanja.php"><span>Pogosta vprašanja</span></a></li>
+											<li aria-level="2"><a href="dohodnina_informativni_izracun.php"><span>Informativni primeri izračunov</span></a></li>
+											<li aria-level="2"><a href="dohodnina_letno_obvestilo.php"><span>Obvestilo o letnem zaslužku</span></a></li>
+										</ul>
+									</div>
+								</div>			
+							</li>
+							<li aria-level="1" >
+								<a href="popusti.php" rel="tag"><span><small>&gt;</small> Ugodnosti</span></a>
+								<div class="drop">
+									<div class="dropWrap">	
+										<ul>
+											<li aria-level="2"><a href="popusti.php"><span>Popusti</span></a></li>
+											<li aria-level="2"><a href="isic_narocilo.php"><span>ISIC izkaznica</span></a></li>
+										</ul>
+									</div>
+								</div>			
+							</li>
+							<li aria-level="1" >
+								<a href="faq.php" rel="tag"><span><small>&gt;</small> Pomoč</span></a>
+								<div class="drop">
+									<div class="dropWrap">	
+										<ul>
+											<li aria-level="2"><a href="faq.php"><span>Pogosta vprašanja</span></a></li>
+											<li aria-level="2"><a href="pravna_svetovalnica.php"><span>Zastavi vprašanje</span></a></li>
+											<li aria-level="2"><a href="pravna_svetovalnica.php?p=pip"><span>Pohvale in kritike</span></a></li>
+										</ul>
+									</div>
+								</div>			
+							</li>
+							<li aria-level="1" class=""><a href="neplacniki.php" ><span>Neplačniki</span></a></li>
+							<li aria-level="1" class=""><a target="_blank" href="http://www.studentski-servis.com/studenti/poslovalnice" ><span>Poslovalnice</span></a></li>
+							
+						</ul>
+					</nav>
+				</div>
+				<div class="rightMenu">
+					<ul>
+						<li class="userDrop" style="padding: 5px; color:#ffffff;">
+							<span class="button bRound"><span><img id="profilephoto2" src="profilephoto.php" alt="" /></span></span>
+								<div style="float: right; font-size: 1.3em; padding-left: 4px"><b>Jakob Zmrzlikar</b><br /><div style="max-width: 60%; float: left;"><a href="nastavitve.php">Nastavitve</a></div><div style="float: right; padding-left: 20px;"><a href="odjava.php">Odjava</a></div></div>
+
+						</li>
+						<li class="switchTheme"><a href="http://www.studentski-servis.com/studenti/" target="_blank" class="iconHome btnPodjetja" title="Domov"><i class="fa fa-home"></i> <span>Stran za študente</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div id="content" class="jobs">
+			<div class="contentWrap rp960">
+				<div class="bgContent jobSearch">
+					<div class="clear oneCol">
+						<section class="content" role="main">
+							<div class="cols cols2 titleBox">
+								<div class="colsWrap">
+									<div class="col">
+										<h1 class="title">Prosta dela</h1>								
+									</div>
+									<div class="col">
+										<div class="topButtons clear">
+											<a href="prosta_dela.php" class="button button6 "><span>Prosta dela</span></a>
+											<a href="moje_delo.php" class="button button6 "><span>Tvoja dela</span></a>
+											<a href="prosta_dela.php?kosarica=1" class="button button6 "><span id="stevecizbor" count-data="0"><i class="fa fa-star"></i>Izbor del</span></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="container">
+								<form action="prosta_dela.php" method="get" id="prostaDela">
+								  <input type="hidden" value="prostaDela2" name="t">
+								  <input type="hidden" value="1" id="prostaDelaPager" name="page">
+								  <input type="hidden" value="1" id="isci" name="isci">
+								  <input type="hidden" value="" id="d014" name="d014">
+								  <input type="hidden" value="" id="kosarica" name="kosarica">
+								  <input type="hidden" value="" id="sort" name="sort">
+								  <input type="hidden" value="" id="selectorv" name="selectorv">
+								  <input type="hidden" value="" id="selectorr" name="selectorr">
+								  <input type="hidden" value="" id="selectors" name="selectors">
+								  <input type="hidden" value="" id="selectord" name="selectord">
+								  <input type="hidden" value="" id="hideisk" name="hideisk">
+								  <input type="hidden" value="1" id="prostaDelaWorkType" name="workType">
+								  <div class="clear twoColLeft">
+									<aside role="complementary" class="sidebar" style="margin-left: 0px; width: 30em; height: auto; top: 0px; transition-duration: 400ms;">
+										<div class="mobileArrow">
+										<a href="#" style="margin-left: 0px; transition-duration: 400ms;" class="">Prikaži prosta dela<i class="fa fa-angle-down"></i></a></div>
+									  <!--<div class="tabs clear"> <a data-work-type="" class="prostaDelaType  selected" href="#">Prosta dela <span>2982</span> <img src="resources/images/icons/arrow-blue.png"></a> <a data-work-type="014" class="prostaDelaType " href="#">Strežba <span></span><img src="resources/images/icons/arrow-blue.png"></a> </div>-->
+									  <div class="blocks">
+										<div class="block tools">
+											<p class="onlyMobile showMobile">Št. del, ki ustrezajo izbranim kriterijem: 2976</p>
+											<a class="prostaDelaReset button button1" href="prosta_dela.php?isci=1">Počisti vse kriterije</a>
+											<a class="prostaDelaClose" href="#"></a>
+										</div>
+
+										<div id="vrsta-oglasa" class="block" data-position="0">
+										  <h4>Vrsta oglasa <i class="fa fa-plus" selector-data="selectorv"></i><span style="" class="note">Ni izbranih kriterijev.</span></h4>
+										  <ul style="display:none">
+											<li>
+											  <input type="checkbox" value="1" name="dd1" class="checkBox" id="type-1"  >
+											  <label for="type-1">današnja dela <!--<span>()</span>--></label>
+											</li>
+											
+											<!--
+											<li>
+											  <input type="checkbox" value="4" name="dp1" class="checkBox" id="type-4" >
+											  <label for="type-4">počitniška dela</label><i title="Dela, ki se opravljajo med 1.6. in 30.9." class="fa fa-info-circle" donottoggle-data="1"></i>
+											</li>
+											-->
+										
+											
+											<li>
+											  <input type="checkbox" value="2" name="dk1" class="checkBox" id="type-2" >
+											  <label for="type-2">dela, krajša od 10 dni <!--<span>()</span>--></label>
+											</li>
+											<li>
+											  <input type="checkbox" value="3" name="do1" class="checkBox" id="type-3"  >
+											  <label for="type-3">dela, daljša od 10 dni <!--<span>()</span>--></label>
+											</li>
+											<li>
+											  <input type="checkbox" value="5" name="dm1" class="checkBox" id="type-5"  >
+											  <label for="type-5">dela, primerna za mlajše od 18 let <!--<span>()</span>--></label>
+											</li>
+											<li>
+												  <input type="checkbox" value="" name="tvojadela" class="checkBox" id="type-6">
+												  <label for="type-6"><a href="moje_delo.php">tvoja dela <!--<span></span>--></a></label>
+											</li>
+										  </ul>
+										</div>
+										<div class="block" data-position="1">
+										  <h4>Regija <i selector-data="selectorr" class="fa fa-plus"></i><span style="" class="note">Ni izbranih kriterijev.</span></h4>
+										  
+										  <ul style="display:none">
+											<li id="region-group-101">
+											  <input type="checkbox" value="101" name="regija[]" class="checkBox" id="region-101">
+											  <label for="region-101">OSREDNJESLOVENSKA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="002" name="regija[]" class="checkBox" id="region-002">
+												  <label for="region-002">LJUBLJANA Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="003" name="regija[]" class="checkBox" id="region-003">
+												  <label for="region-003">DOMŽALE - KAMNIK </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="020" name="regija[]" class="checkBox" id="region-020">
+												  <label for="region-020">GROSUPLJE Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="021" name="regija[]" class="checkBox" id="region-021">
+												  <label for="region-021">VRHNIKA Z OKOLICO </label>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li id="region-group-109">
+											  <input type="checkbox" value="109" name="regija[]" class="checkBox" id="region-109">
+											  <label for="region-109">PODRAVSKA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="031" name="regija[]" class="checkBox" id="region-031">
+												  <label for="region-031">MARIBOR Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="030" name="regija[]" class="checkBox" id="region-030">
+												  <label for="region-030">PTUJ Z OKOLICO </label>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>											
+											<li>
+											  <input type="checkbox" regija="1" value="012" name="regija[]" class="checkBox" id="region-012">
+											  <label for="region-012">KOROŠKA </label>
+											</li>
+											<li>
+											  <input type="checkbox" regija="1" value="011" name="regija[]" class="checkBox" id="region-011">
+											  <label for="region-011">POMURSKA </label>
+											</li>
+											<li>
+											  <input type="checkbox" regija="1" value="015" name="regija[]" class="checkBox" id="region-015">
+											  <label for="region-015">SAVINJSKA </label>
+											</li>
+											<li>
+											  <input type="checkbox" regija="1" value="005" name="regija[]" class="checkBox" id="region-005">
+											  <label for="region-005">ZASAVSKA </label>
+											</li>
+											<li id="region-group-108">
+											  <input type="checkbox" value="108" name="regija[]" class="checkBox" id="region-108">
+											  <label for="region-108">GORENJSKA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="023" name="regija[]" class="checkBox" id="region-023">
+												  <label for="region-023">KRANJ Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="024" name="regija[]" class="checkBox" id="region-024">
+												  <label for="region-024">ŠKOFJA LOKA Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="025" name="regija[]" class="checkBox" id="region-025">
+												  <label for="region-025">RADOVLJICA Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="026" name="regija[]" class="checkBox" id="region-026">
+												  <label for="region-026">JESENICE Z OKOLICO </label>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											  <input type="checkbox" regija="1" value="017" name="regija[]" class="checkBox" id="region-017">
+											  <label for="region-017">GORIŠKA </label>
+											</li>
+											<li>
+											  <input type="checkbox" regija="1" value="018" name="regija[]" class="checkBox" id="region-018">
+											  <label for="region-018">NOTRANJSKO KRAŠKA </label>
+											</li>
+											<li id="region-group-107">
+											  <input type="checkbox" value="107" name="regija[]" class="checkBox" id="region-107">
+											  <label for="region-107">OBALNA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="027" name="regija[]" class="checkBox" id="region-027">
+												  <label for="region-027">KOPER Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="028" name="regija[]" class="checkBox" id="region-028">
+												  <label for="region-028">IZOLA Z OKOLICO </label>
+												</li>
+												<li>
+												  <input type="checkbox" value="029" name="regija[]" class="checkBox" id="region-029">
+												  <label for="region-029">PIRAN Z OKOLICO </label>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											  <input type="checkbox" regija="1" value="006" name="regija[]" class="checkBox" id="region-006">
+											  <label for="region-006">SPODNJEPOSAVSKA </label>
+											</li>
+											<li>
+											  <input type="checkbox" regija="1" value="010" name="regija[]" class="checkBox" id="region-010">
+											  <label for="region-010">DOLENJSKA </label>
+											</li>
+											<!--<li>
+											  <input type="checkbox" value="013" name="regija[]" class="checkBox" id="region-013">
+											  <label for="region-013">PO SLOVENIJI </label>
+											</li>-->
+											<!--<li>
+											  <input type="checkbox" regija="1" value="014" name="regija[]" class="checkBox" id="region-014">
+											  <label for="region-014">TUJINA </label>
+											</li>-->
+										  </ul>
+										</div>
+										<div class="block" data-position="2">
+										  <h4>Vrsta del <i class="fa fa-plus" selector-data="selectors"></i><span style="" class="note">Ni izbranih kriterijev.</span></h4>
+										  <ul style="display:none">
+											<li>
+											  <input type="checkbox" value="014" name="skD[]" class="checkBox" skupina-del-data="1" id="group-014"  >
+											  <label for="group-014">STREŽBA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A821" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A821" >
+												  <label for="group-A821">POMOČ V STREŽBI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A104" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A104" >
+												  <label for="group-A104">STREŽBA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A164" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A164" >
+												  <label for="group-A164">STREŽBA HRANE IN PIJAČE</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="010" name="skD[]" class="checkBox" skupina-del-data="1" id="group-010"  >
+											  <label for="group-010">PRODAJA  </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A022" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A022" >
+												  <label for="group-A022">BLAGAJNIK</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A014" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A014" >
+												  <label for="group-A014">DELO NA BENCINSKEM SERVISU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A064" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A064" >
+												  <label for="group-A064">POBIRANJE CESTNINE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A065" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A065" >
+												  <label for="group-A065">POBIRANJE VSTOPNINE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A083" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A083" >
+												  <label for="group-A083">POMOČ PRI PRODAJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A116" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A116" >
+												  <label for="group-A116">POMOČ V TRGOVINI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A076" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A076" >
+												  <label for="group-A076">PRODAJA</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="002" name="skD[]" class="checkBox" skupina-del-data="1" id="group-002"  >
+											  <label for="group-002">FIZIČNA DELA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A006" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A006" >
+												  <label for="group-A006">ARHEOLOŠKA IZKOPAVANJA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A010" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A010" >
+												  <label for="group-A010">ČIŠČENJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A009" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A009" >
+												  <label for="group-A009">DELO V DELAVNICI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A023" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A023" >
+												  <label for="group-A023">DELO V PROIZVODNJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A024" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A024" >
+												  <label for="group-A024">DELO V SKLADIŠČU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A036" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A036" >
+												  <label for="group-A036">DELO V TISKARNI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A028" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A028" >
+												  <label for="group-A028">FIZIČNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A033" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A033" >
+												  <label for="group-A033">GRADBENA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A158" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A158" >
+												  <label for="group-A158">KIDANJE SNEGA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A142" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A142" >
+												  <label for="group-A142">MIZARSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A051" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A051" >
+												  <label for="group-A051">MONTAŽA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A067" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A067" >
+												  <label for="group-A067">NAKLADANJE/ RAZKLADANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A094" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A094" >
+												  <label for="group-A094">SELITVE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A098" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A098" >
+												  <label for="group-A098">SLIKOPLESKARSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A110" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A110" >
+												  <label for="group-A110">TEŽJA FIZIČNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A126" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A126" >
+												  <label for="group-A126">VRTNARSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A836" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A836" >
+												  <label for="group-A836">VULKANIZERSKA DELA</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="006" name="skD[]" class="checkBox" skupina-del-data="1" id="group-006"  >
+											  <label for="group-006">DELO NA TERENU </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A018" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A018" >
+												  <label for="group-A018">DELO NA TERENU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A043" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A043" >
+												  <label for="group-A043">KURIR</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A062" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A062" >
+												  <label for="group-A062">PISMONOŠA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A063" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A063" >
+												  <label for="group-A063">PLAKATIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A084" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A084" >
+												  <label for="group-A084">RAZNAŠANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A085" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A085" >
+												  <label for="group-A085">RAZNAŠANJE ČASOPISOV</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A086" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A086" >
+												  <label for="group-A086">RAZNAŠANJE REKLAMNIH LETAKOV</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A159" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A159" >
+												  <label for="group-A159">RAZVOZ</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="004" name="skD[]" class="checkBox" skupina-del-data="1" id="group-004"  >
+											  <label for="group-004">RAČUNALNIŠTVO IN PROGRAMIRANJE </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A832" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A832" >
+												  <label for="group-A832">INFORMATIKA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A210" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A210" >
+												  <label for="group-A210">IZDELAVA IN UREJANJE WWW STRANI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A055" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A055" >
+												  <label for="group-A055">OBDELAVA PODATKOV</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A078" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A078" >
+												  <label for="group-A078">PROGRAMIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A090" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A090" >
+												  <label for="group-A090">RAČUNALNIŠKE STORITVE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A095" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A095" >
+												  <label for="group-A095">SERVISIRANJE RAČUNALNIŠKE OPREME</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="013" name="skD[]" class="checkBox" skupina-del-data="1" id="group-013"  >
+											  <label for="group-013">GOSTINSTVO IN TURIZEM </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A822" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A822" >
+												  <label for="group-A822">DELO V IGRALNICI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A032" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A032" >
+												  <label for="group-A032">DELO V KUHINJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A130" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A130" >
+												  <label for="group-A130">DELO V TURIZMU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A075" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A075" >
+												  <label for="group-A075">KRUPJE/ KRUPJEJKA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A118" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A118" >
+												  <label for="group-A118">POMOČ V KUHINJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A161" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A161" >
+												  <label for="group-A161">PORTIR</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A160" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A160" >
+												  <label for="group-A160">SOBAR/ICA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A070" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A070" >
+												  <label for="group-A070">VALEJ/VALEJKA</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="005" name="skD[]" class="checkBox" skupina-del-data="1" id="group-005"  >
+											  <label for="group-005">STROKOVNA DELA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A826" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A826" >
+												  <label for="group-A826">ARHEOLOŠKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A008" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A008" >
+												  <label for="group-A008">ASISTENT</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A019" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A019" >
+												  <label for="group-A019">DELO V KNJIŽNICI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A835" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A835" >
+												  <label for="group-A835">DELO V LOGISTIKI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A834" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A834" >
+												  <label for="group-A834">DIGITALNI MARKETING</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A133" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A133" >
+												  <label for="group-A133">ELEKTROTEHNIČNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A027" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A027" >
+												  <label for="group-A027">FIGURANT</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A833" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A833" >
+												  <label for="group-A833">INFORMACIJSKO KOMUNIKACIJSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A824" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A824" >
+												  <label for="group-A824">INŠTALACIJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A837" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A837" >
+												  <label for="group-A837">KONTROLA KAKOVOSTI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A045" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A045" >
+												  <label for="group-A045">LEKTORIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A047" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A047" >
+												  <label for="group-A047">MARKETING</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A139" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A139" >
+												  <label for="group-A139">MERITVE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A052" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A052" >
+												  <label for="group-A052">NASTOP</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A054" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A054" >
+												  <label for="group-A054">NOVINARSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A143" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A143" >
+												  <label for="group-A143">POMOČ NA PODROČJU MARKETINGA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A136" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A136" >
+												  <label for="group-A136">PRAVNE STORITVE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A073" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A073" >
+												  <label for="group-A073">PREVAJANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A079" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A079" >
+												  <label for="group-A079">PROJEKTIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A152" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A152" >
+												  <label for="group-A152">PROJEKTNO DELO</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A082" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A082" >
+												  <label for="group-A082">RAZISKOVALNO DELO</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A088" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A088" >
+												  <label for="group-A088">RESTAVRIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A074" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A074" >
+												  <label for="group-A074">REŠEVALEC/KA IZ VODE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A099" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A099" >
+												  <label for="group-A099">SNEMANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A831" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A831" >
+												  <label for="group-A831">SOJENJE TEKME</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A103" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A103" >
+												  <label for="group-A103">STEVARDESA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A105" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A105" >
+												  <label for="group-A105">STROKOVNO DELO</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A106" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A106" >
+												  <label for="group-A106">SVETOVALEC</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A114" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A114" >
+												  <label for="group-A114">UREDNIK</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A156" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A156" >
+												  <label for="group-A156">UREDNIK SPLETNIH VSEBIN</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A155" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A155" >
+												  <label for="group-A155">UREJANJE DRUŽ. OMREŽIJ (FB,IN,TW)</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A124" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A124" >
+												  <label for="group-A124">VODENJE</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="008" name="skD[]" class="checkBox" skupina-del-data="1" id="group-008"  >
+											  <label for="group-008">PROMOCIJA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A011" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A011" >
+												  <label for="group-A011">DEGUSTACIJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A013" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A013" >
+												  <label for="group-A013">DELJENJE LETAKOV</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A017" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A017" >
+												  <label for="group-A017">DELO NA SEJMU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A829" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A829" >
+												  <label for="group-A829">HOSTES/A</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A080" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A080" >
+												  <label for="group-A080">PROMOCIJA</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="016" name="skD[]" class="checkBox" skupina-del-data="1" id="group-016"  >
+											  <label for="group-016">DELO S STRANKAMI </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A003" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A003" >
+												  <label for="group-A003">ANIMATOR</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A096" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A096" >
+												  <label for="group-A096">DELO NA RECEPCIJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A150" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A150" >
+												  <label for="group-A150">DELO S STRANKAMI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A839" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A839" >
+												  <label for="group-A839">DELO V LOTERIJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A838" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A838" >
+												  <label for="group-A838">DELO V RENT A CAR AGENCIJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A015" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A015" >
+												  <label for="group-A015">HELPDESK</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A037" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A037" >
+												  <label for="group-A037">INFORMATOR</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A163" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A163" >
+												  <label for="group-A163">MASKOTA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A119" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A119" >
+												  <label for="group-A119">POMOČ UPORABNIKOM</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A092" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A092" >
+												  <label for="group-A092">TEHNIČNA POMOČ</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A108" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A108" >
+												  <label for="group-A108">TELEFONIST</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="007" name="skD[]" class="checkBox" skupina-del-data="1" id="group-007"  >
+											  <label for="group-007">TRŽENJE IN ANKETIRANJE </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A002" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A002" >
+												  <label for="group-A002">AKVIZITERSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A004" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A004" >
+												  <label for="group-A004">ANKETIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A005" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A005" >
+												  <label for="group-A005">ANKETIRANJE PO TELEFONU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A042" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A042" >
+												  <label for="group-A042">KLICNI CENTER</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A041" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A041" >
+												  <label for="group-A041">KOMERCIALNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A071" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A071" >
+												  <label for="group-A071">POSPEŠEVANJE PRODAJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A109" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A109" >
+												  <label for="group-A109">TELEFONSKI MARKETING</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A113" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A113" >
+												  <label for="group-A113">TRŽENJE</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="009" name="skD[]" class="checkBox" skupina-del-data="1" id="group-009"  >
+											  <label for="group-009">POUČEVANJE </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A115" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A115" >
+												  <label for="group-A115">DELO V FITNESU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A825" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A825" >
+												  <label for="group-A825">DELO Z OTROKI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A025" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A025" >
+												  <label for="group-A025">DEMONSTRATOR</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A038" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A038" >
+												  <label for="group-A038">INŠTRUKCIJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A049" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A049" >
+												  <label for="group-A049">MENTOR</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A068" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A068" >
+												  <label for="group-A068">POMOČNIK VZGOJITELJICE/VZGOJITELJA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A072" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A072" >
+												  <label for="group-A072">POUČEVANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A125" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A125" >
+												  <label for="group-A125">PREDAVANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A112" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A112" >
+												  <label for="group-A112">TRENER/KA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A121" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A121" >
+												  <label for="group-A121">UČITELJ PLAVANJA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A077" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A077" >
+												  <label for="group-A077">UČITELJ SMUČANJA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A120" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A120" >
+												  <label for="group-A120">VADITELJ</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A165" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A165" >
+												  <label for="group-A165">VADITELJ PLAVANJA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A122" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A122" >
+												  <label for="group-A122">VARSTVO</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="001" name="skD[]" class="checkBox" skupina-del-data="1" id="group-001"  >
+											  <label for="group-001">LAŽJA DELA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A061" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A061" >
+												  <label for="group-A061">ARANŽIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A012" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A012" >
+												  <label for="group-A012">DEKLARIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A149" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A149" >
+												  <label for="group-A149">DELO V AVTOPRALNICI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A840" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A840" >
+												  <label for="group-A840">DELO V PEKARNI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A029" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A029" >
+												  <label for="group-A029">DEŽURSTVO</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A026" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A026" >
+												  <label for="group-A026">ETIKETIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A650" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A650" >
+												  <label for="group-A650">INVENTURA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A100" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A100" >
+												  <label for="group-A100">KUVERTIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A044" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A044" >
+												  <label for="group-A044">LAŽJA FIZIČNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A046" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A046" >
+												  <label for="group-A046">LEPLJENJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A060" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A060" >
+												  <label for="group-A060">MASKA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A050" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A050" >
+												  <label for="group-A050">MODEL </label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A059" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A059" >
+												  <label for="group-A059">PAKIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A827" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A827" >
+												  <label for="group-A827">PARKIRANJE VOZIL </label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A066" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A066" >
+												  <label for="group-A066">POLNJENJE POLIC</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A144" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A144" >
+												  <label for="group-A144">POMOČ V SKLADIŠČU IN PROD. CENTRIH</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A678" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A678" >
+												  <label for="group-A678">REDITELJ</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A093" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A093" >
+												  <label for="group-A093">ROČNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A097" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A097" >
+												  <label for="group-A097">SESTAVLJANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A101" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A101" >
+												  <label for="group-A101">SORTIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A141" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A141" >
+												  <label for="group-A141">STATIST</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A107" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A107" >
+												  <label for="group-A107">ŠTETJE PROMETA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A151" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A151" >
+												  <label for="group-A151">UREJANJE OKOLICE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A134" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A134" >
+												  <label for="group-A134">VLAGANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A127" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A127" >
+												  <label for="group-A127">VZDRŽEVANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A132" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A132" >
+												  <label for="group-A132">ZLAGANJE</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="003" name="skD[]" class="checkBox" skupina-del-data="1" id="group-003"  >
+											  <label for="group-003">ADMINISTRATIVNA DELA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A001" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A001" >
+												  <label for="group-A001">ADMINISTRATIVNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A007" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A007" >
+												  <label for="group-A007">ARHIVSKO DELO</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A016" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A016" >
+												  <label for="group-A016">DELO NA RAČUNALNIKU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A031" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A031" >
+												  <label for="group-A031">FOTOKOPIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A830" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A830" >
+												  <label for="group-A830">KLASIFIKACIJA KLJUČNIH BESED</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A040" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A040" >
+												  <label for="group-A040">KNJIGOVODSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A058" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A058" >
+												  <label for="group-A058">ORGANIZACIJSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A135" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A135" >
+												  <label for="group-A135">POPIS PODATKOV</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A081" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A081" >
+												  <label for="group-A081">RAČUNOVODSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A154" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A154" >
+												  <label for="group-A154">ŠPEDICIJSKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A138" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A138" >
+												  <label for="group-A138">TAJNIŠKA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A117" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A117" >
+												  <label for="group-A117">UREJANJE BESEDIL</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A123" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A123" >
+												  <label for="group-A123">VNOS PODATKOV V RAČUNALNIK</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A140" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A140" >
+												  <label for="group-A140">ZAHTEVNA ADMINISTRATIVNA DELA</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="015" name="skD[]" class="checkBox" skupina-del-data="1" id="group-015"  >
+											  <label for="group-015">OBLIKOVANJE </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A030" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A030" >
+												  <label for="group-A030">FOTOGRAFIRANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A034" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A034" >
+												  <label for="group-A034">GRAFIČNA DELA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A153" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A153" >
+												  <label for="group-A153">GRAFIČNA PRIPRAVA ZA TISK</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A069" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A069" >
+												  <label for="group-A069">GRAFIČNO OBLIKOVANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A056" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A056" >
+												  <label for="group-A056">OBLIKOVANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A091" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A091" >
+												  <label for="group-A091">RISANJE</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+											<li>
+											  <input type="checkbox" value="012" name="skD[]" class="checkBox" skupina-del-data="1" id="group-012"  >
+											  <label for="group-012">ZDRAVSTVO IN FARMACIJA </label>
+											  <ul>
+												<li>
+												  <input type="checkbox" value="A147" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A147" >
+												  <label for="group-A147">DELO V FARMACIJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A020" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A020" >
+												  <label for="group-A020">DELO V LABORATORIJU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A021" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A021" >
+												  <label for="group-A021">DELO V LEKARNI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A148" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A148" >
+												  <label for="group-A148">DELO V ORDINACIJI</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A157" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A157" >
+												  <label for="group-A157">DELO V VELNESU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A146" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A146" >
+												  <label for="group-A146">DELO V ZDRAVSTVU</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A039" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A039" >
+												  <label for="group-A039">FIZIOTERAPIJA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A145" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A145" >
+												  <label for="group-A145">KOZMETIČNE STORITVE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A162" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A162" >
+												  <label for="group-A162">MASER</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A048" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A048" >
+												  <label for="group-A048">MEDICINSKA SESTRA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A053" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A053" >
+												  <label for="group-A053">NEGOVANJE</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A102" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A102" >
+												  <label for="group-A102">SPREMLJEVALEC/ SPREMLJEVALKA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A087" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A087" >
+												  <label for="group-A087">ZDRAVSTVENA NEGA</label>
+												  <br>
+												</li>
+												<li>
+												  <input type="checkbox" value="A131" name="skD[]" class="checkBox" delo-v-skupini-data="1" id="group-A131" >
+												  <label for="group-A131">ZDRAVSTVENI TEHNIK</label>
+												  <br>
+												</li>
+											  </ul>
+											  <i class="fa fa-plus"></i></li>
+											<li>
+										  </ul>
+										</div>
+										<div class="block" data-position="3" id="delovni-cas">
+										  <h4>Delovni čas <i class="fa fa-plus" selector-data="selectord"></i><span style="" class="note">Ni izbranih kriterijev.</span></h4>
+										  <ul style="display:none">
+											<li>
+											  <input type="checkbox" value="1" name="tdd1" class="checkBox" id="time-1" >
+											  <label for="time-1">Dopoldan <span>()</span></label>
+											</li>
+											<li>
+											  <input type="checkbox" value="1" name="tdp1" class="checkBox" id="time-2" >
+											  <label for="time-2">Popoldan <span>()</span></label>
+											</li>
+											<li>
+											  <input type="checkbox" value="1" name="tdv1" class="checkBox" id="time-3" >
+											  <label for="time-3">Med vikendom <span>()</span></label>
+											</li>
+											<li>
+											  <input type="checkbox" value="1" name="tdi1" class="checkBox" id="time-4" >
+											  <label for="time-4">Izmensko <span>()</span></label>
+											</li>
+										  </ul>
+										</div>
+										<div class="block kljucnaBeseda" data-position="5">
+										  <h4>Ključna beseda <span class="note" style="margin-top: 22px;">Išči po: šifra oglasa, naziv podjetja, vrsta dela, ...</span></h4>
+										  <div class="keySearch">
+											<input type="text" value="" name="kljb" id="inputTextField">
+											<a id="prostaDelaPrikazi" class="button button5 right"><span>Prikaži</span></a> 
+											<i id="prostaDelaPrikaziIcon" class="fa fa-search"></i>
+										  </div>
+										</div>
+										<!-- price slider block -->
+										<div class="block hourlyRate" data-position="6">
+											<h4>Urna postavka (neto)</h4>
+											<input type="hidden" name="hourlyRateFrom" id="hourlyRateFrom" value=4.13 />
+											<input type="hidden" name="hourlyRateTo" id="hourlyRateTo" value=21.00 />
+											<div class="urnaPostavkaSearch">
+												<div name="urnaPostavka" id="urnaPostavkaSlider"></div>
+												<div id="urnaPostavka"></div>
+												<span class="minVal">4,13 €</span>
+												<span class="maxVal">21 €</span>
+												<div class="urnaPostavka">
+													od&nbsp;&nbsp;<input name="urnaPostavkaMin" placeholder="min" type="text" value="" id="urnaPostavkaMin"> €
+													&nbsp;&nbsp;do&nbsp;&nbsp;&nbsp;<input name="urnaPostavkaMax" placeholder="max" type="text" value="" id="urnaPostavkaMax"> €
+												</div>											
+											</div>
+										</div>
+
+<!-- slider js block -->
+
+<script type="text/javascript">
+
+
+function setSliderHandle(i, value) {
+	var r = [null,null];
+	r[i] = value;
+	keypressSlider.noUiSlider.set(r);
+}
+
+function aktiviraj_noUiSlider () {	
+
+var hourlyRateMin=4.13;
+var hourlyRateMax=21;
+var hourlyRateFrom=$('#hourlyRateFrom').val();
+var hourlyRateTo=$('#hourlyRateTo').val();
+
+	
+		var keypressSlider = document.getElementById('urnaPostavka');
+		var input0 = document.getElementById('urnaPostavkaMin');
+		var input1 = document.getElementById('urnaPostavkaMax');
+		var inputs = [input0, input1];
+	
+var config={
+			start: [hourlyRateFrom, hourlyRateTo],
+			connect: true,
+			tooltips: true,
+			step: 0.05,
+
+			//tooltips: [true, wNumb({ decimals: 1 })],
+			range: {
+				'min': hourlyRateMin,
+				'max': hourlyRateMax
+			},
+			format: wNumb({
+				decimals: 2,
+				mark: ',',
+				postfix: '&nbsp;€'
+			})
+		}
+		
+		
+
+		noUiSlider.create(keypressSlider, config);
+
+
+		
+		keypressSlider.noUiSlider.on('update', function( values, handle ) {
+			onlyNum = values[handle].replace('&nbsp;€','');
+			inputs[handle].value = onlyNum;
+		});
+
+		keypressSlider.noUiSlider.on('change', function(event ) {
+			setTimeout(
+					function()
+					{
+						jQuery('#prostaDelaSort').val(3);
+						jQuery('#urnaPostavkaMin').trigger('change');
+					}, 10);
+
+
+		});
+
+
+		// Listen to keydown events on the input field.
+		inputs.forEach(function(input, handle) {
+
+			input.addEventListener('change', function(){
+				setSliderHandle(handle, this.value);
+			});
+
+			input.addEventListener('change', function( e ) {
+
+				var values = keypressSlider.noUiSlider.get();
+				var value = Number(values[handle]);
+
+				// Chunk 'handle0_down, handle0_up], [handle1_down, handle1_up' is missing in db
+				var steps = keypressSlider.noUiSlider.steps();
+
+				// [down, up]
+				var step = steps[handle];
+
+				var position;
+
+				// 13 is enter,
+				// 38 is key up,
+				// 40 is key down.
+				switch ( e.which ) {
+
+					case 13:
+						setSliderHandle(handle, this.value);
+						break;
+
+					case 38:
+
+						// Get step to go increase slider value (up)
+						position = step[1];
+
+						// false = no step is set
+						if ( position === false ) {
+							position = 1;
+						}
+
+						// null = edge of slider
+						if ( position !== null ) {
+							setSliderHandle(handle, value + position);
+						}
+
+						break;
+
+					case 40:
+
+						position = step[0];
+
+						if ( position === false ) {
+							position = 1;
+						}
+
+						if ( position !== null ) {
+							setSliderHandle(handle, value - position);
+						}
+
+						break;
+				}
+			});
+		});
+}
+aktiviraj_noUiSlider();
+
+		
+		
+</script>
+									</div>
+
+																		  <div class="banner">
+										<div id="bannerPool1" class="bannerPool">
+										  <!--<object width="305" height="254" type="application/x-shockwave-flash" data="resources/files/160x600.swf" id="swfBannerId138" style="visibility: visible;">
+											<param name="wmode" value="opaque">
+										  </object>-->
+										  <a href="http://www.studentski-servis.com/" rel="external" id="swfBannerHrefId138" class="swfBannerHref"></a> 
+										  <!--
+										  <script type="text/javascript">
+												jQuery(document).ready(function(){
+													//swfobject.embedSWF("resources/files/160x600.swf", "swfBannerId138", "305", "254", "9.0.0",null,null,{wmode:"opaque"});
+													
+																		
+														ga('send', 'event', 'banner_pool_id1', 'show', 'banner_id138');
+													
+														
+													
+													jQuery('#swfBannerHrefId138').click(function(){
+														
+																				
+															ga('send', 'event', 'banner_pool_id1', 'click', 'banner_id138');
+														
+															
+														 
+														setTimeout(function() {
+															window.open('index.php?r=banner&amp;id=138');
+														}, 0);
+														return false;
+													});
+												});
+											</script> 
+											-->
+										</div>
+									  </div>
+									</aside>
+									<section role="main" class="content" id="pdcontent"> <a name="results"></a>
+									  <div class="pagerTop scrolltop">
+										<div class="sortBar clear">
+										  <div class="left"> 
+											<span class="label jobsNumber">Št.del: <strong>2976</strong></span>
+											<div class="stDel" style="display: none;">
+												<span class="label">na stran:</span>
+													<select class="prostaDelaPerPageOptions" name="perpage" id="perpage">
+													  <option selected="selected" value="10">10</option>
+													  <option  value="20">20</option>
+													  <option  value="30">30</option>
+													  <option  value="50">50</option>
+													</select>
+											</div>											
+											<div class="paging">
+											  <p class="navigator1"><span class="label">Stran:</span> <a data-page="1" href="#" class="pageNum pagerLink">1</a><span class="pageNum dots">...</span><a data-page="93" href="#" class="pageNum pagerLink">93</a><a data-page="94" href="#" class="pageNum pagerLink">94</a><span class="pageNum selected">95</span><a data-page="96" href="#" class="pageNum pagerLink">96</a><span class="pageNum dots">...</span><a data-page="298" href="#" class="pageNum pagerLink">298</a> <a data-page="2" href="#" title="Naprej" alt="Naprej" class="button button1 noBorder iconnext pagerLink"><span>Naprej </span></a></p>
+											</div>
+										  </div>
+										  <div class="right"> 
+											<span class="label sort">Razvrsti po:</span>
+											<div class="prostaDelaSortOptions">
+												<span  data-id="1">novejših delih</span>
+												<span  data-id="3">najvišji urni postavki</span>
+											</div>
+										  </div>
+										</div>
+									  </div>
+									<div class="resultsDisplay noCaption">
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">STREŽBA</span>
+												<span class="postavka" ><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>5.00 €/h neto</strong> (5.92 €/h bruto)</a></span>
+												<span class="lokacija" ><img src="resources/images/icons/icon_job_location.png"><strong>VELIKA KOSTREVNICA</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Za pomoč v strežbi iščejo komunikativne in prijazne osebe, ki si želijo sodelovati v majhnem kolektivu. Izkušnje so zaželene, niso pa pogoj. Urna postavka je od 5, 92 do 6, 43 € bruto. Odvisno od izkušenj. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 3 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> PO DOGOVORU <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306801</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306801" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306801"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+																														<p class="allCompanyJobs"><a class="companyJobs" href="prosta_dela.php?isci=1&kljb=DOLAR+%C5%BDIGA+S.P."><i class="fa fa-sticky-note-o" aria-hidden="true"></i><strong>Vsi oglasi tega podjetja</strong></a></p>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">STREŽBA</span>
+												<span class="postavka" ><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>5.00 €/h neto</strong> (5.92 €/h bruto)</a></span>
+												<span class="lokacija" ><img src="resources/images/icons/icon_job_location.png"><strong>DOMŽALE </strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Dnevni lokal v trgovskem centru Domžale išče komunikativno, prijetno osebo za strežbo. Zaželene so izkušnje. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 1 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> IZMENSKO <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306789</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306789" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306789"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">PRODAJA<div style="font-size: 0.7em; font-weight: normal; font-family: Din, Helvetica, serif;">DELO V CVETLIČARNI</div></span>
+
+												<span class="postavka" style="vertical-align: 10px;"><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>PO DOGOVORU</strong></a></span>
+												<span class="lokacija" style="vertical-align: 10px;"><img src="resources/images/icons/icon_job_location.png"><strong>KOPER</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Podjetje išče osebi za delo v cvetličarni. Pogoj: starost nad 18 in smisel za aranžiranje. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 1 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> PO DOGOVORU <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306787</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306787" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306787"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">POMOČ PRI PRODAJI</span>
+												<span class="postavka" ><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>4.22 €/h neto</strong> (5.00 €/h bruto)</a></span>
+												<span class="lokacija" ><img src="resources/images/icons/icon_job_location.png"><strong>CELJE</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Podjetje potrebuje več polnoletnih, zanesljivih, vestnih in komunikativnih oseb za pomoč pri prodaji v outlet trgovini s čevlji. Delovni čas je po dogovoru in potrebi. Interesenti naj se osebno oglasijo v poslovalnici ali pokličejo na kontakt podjetja. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 20 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> OD 27. 10. 2019 DO 25. 11. 2019  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> PO DOGOVORU <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306782</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306782" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306782"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+																														<p class="allCompanyJobs"><a class="companyJobs" href="prosta_dela.php?isci=1&kljb=MASS+D.O.O."><i class="fa fa-sticky-note-o" aria-hidden="true"></i><strong>Vsi oglasi tega podjetja</strong></a></p>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">DELO V AVTOPRALNICI</span>
+												<span class="postavka" ><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>4.31 €/h neto</strong> (5.10 €/h bruto)</a></span>
+												<span class="lokacija" ><img src="resources/images/icons/icon_job_location.png"><strong>LJUBLJANA</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Delo poteka v dopoldanskem terminu, predvsem pa v urejenem in sproščenem okolju v eni izmed najboljših elitnih avtopralnic v Ljubljani oz. Sloveniji. Iščejo resno, odgovorno in predvsem delovno osebo. Plačilo po dogovoru. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 1 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> DOPOLDAN <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306780</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306780" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306780"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">STREŽBA</span>
+												<span class="postavka" ><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>5.00 €/h neto</strong> (5.92 €/h bruto)</a></span>
+												<span class="lokacija" ><img src="resources/images/icons/icon_job_location.png"><strong>KAMNIK</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Prijeten lokal ob kamniški obvoznici, išče odgovorno, zanesljivo, nasmejano in komunikativno osebo za delo v strežbi. Delo je mogoče samo med vikendi ali samo med tednom ali oboje. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 1 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> PO DOGOVORU <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306778</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306778" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306778"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">STREŽBA</span>
+												<span class="postavka" ><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>5.49 €/h neto</strong> (6.50 €/h bruto)</a></span>
+												<span class="lokacija" ><img src="resources/images/icons/icon_job_location.png"><strong>LJUBLJANA ŠENTVID</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Strežba v dnevno-nočnem lokalu. Pogoj je polnoletnost. Bruto urna postavka je ob dobrem delu lahko tudi višja. Pokliči. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 3 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> PO DOGOVORU <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306772</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306772" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306772"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+															
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">ČIŠČENJE<div style="font-size: 0.7em; font-weight: normal; font-family: Din, Helvetica, serif;">DELO NA RECEPCIJI</div></span>
+
+												<span class="postavka" style="vertical-align: 10px;"><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>4.13 €/h neto</strong> (4.89 €/h bruto)</a></span>
+												<span class="lokacija" style="vertical-align: 10px;"><img src="resources/images/icons/icon_job_location.png"><strong>SLOVENSKA BISTRICA</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Podjetje potrebuje osebo za čiščenje in delo na recepciji fitnesa. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 1 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> PO DOGOVORU <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306768</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306768" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306768"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+																														<p class="allCompanyJobs"><a class="companyJobs" href="prosta_dela.php?isci=1&kljb=AVTO+JURI%C4%8C+D.O.O."><i class="fa fa-sticky-note-o" aria-hidden="true"></i><strong>Vsi oglasi tega podjetja</strong></a></p>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">POMOČ V STREŽBI</span>
+												<span class="postavka" ><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>6.50 €/h neto</strong> (7.69 €/h bruto)</a></span>
+												<span class="lokacija" ><img src="resources/images/icons/icon_job_location.png"><strong>LJUBLJANA</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Iščejo pomoč pri strežbi hrane in pijače v prenovljeni, moderni in še večji restavraciji. Delo bo potekalo po dogovorjenem urniku v okviru delovnega časa trgovine. Za prijavo pokličite ali pošljite mail. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 1 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DLJE ČASA (OBČASNO)  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> PO DOGOVORU <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306767</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306767" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306767"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+																														<p class="allCompanyJobs"><a class="companyJobs" href="prosta_dela.php?isci=1&kljb=RUTAR+MARKETING+D.O.O."><i class="fa fa-sticky-note-o" aria-hidden="true"></i><strong>Vsi oglasi tega podjetja</strong></a></p>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+										<!-- start jobItem -->
+										<div class="jobItem">
+											<div class="col jobTitle clear ">
+												<span class="title">POMOČ V KUHINJI<div style="font-size: 0.7em; font-weight: normal; font-family: Din, Helvetica, serif;">POMOČ PRI PRODAJI</div></span>
+
+												<span class="postavka" style="vertical-align: 10px;"><img src="resources/images/icons/icon_euro.png"><a href="https://www.youtube.com/watch?v=W6iYAQaYE74" target="_blank"><strong>6.00 €/h neto</strong> (7.10 €/h bruto)</a></span>
+												<span class="lokacija" style="vertical-align: 10px;"><img src="resources/images/icons/icon_job_location.png"><strong>LJUBLJANA POLJANE</strong></span>
+											</div>
+	
+											<div class="col jobData">
+												<div class="cols space20 cols1-3">
+													<div class="colsWrap">
+														<div class="jobContent col">
+															<p>Razdeljevanje šolskih obrokov od 10. ure dalje. Pokliči ali pošlji prijavo na e-naslov. </p>
+															<ul>
+																<li><strong>Št. prostih mest:</strong> 2 <span class="spacer">|</span></li>
+																<li><strong>Trajanje:</strong> DO KONCA JUNIJA 2020  <span class="spacer">|</span></li>
+																<li><strong>Delovnik:</strong> DOPOLDAN <span class="spacer">|</span></li>
+																<li><strong>šifra:</strong> 306760</li>
+																<li><strong>Narava dela:</strong> začasno in občasno delo</li>
+															</ul>
+														</div>
+														<div class="col actionBlock">
+															<p class="textcenter"><a href="podrobnosti.php?id=306760" class="button button1"><span>Kontakt podjetja</span></a></p>
+															<p class="vIzbor linkTitle"> <a href="#" class="iconLink blue addToCart" link-data="dodajvkosarico.php?id=306760"><i class="fa fa-star-o"></i><span><strong>Dodaj v izbor del</strong></span></a></p>
+																														<p class="allCompanyJobs"><a class="companyJobs" href="prosta_dela.php?isci=1&kljb=K-NORMA+D.O.O."><i class="fa fa-sticky-note-o" aria-hidden="true"></i><strong>Vsi oglasi tega podjetja</strong></a></p>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div><!-- /end job item-->
+									  </div>
+									  <div class="sortBar clear">
+										  <div class="left"> 
+											<span class="label jobsNumber">Št.del: <strong>2976</strong></span>
+											<div class="stDel" style="display: none">
+												<span class="label">na stran:</span>
+													<select class="prostaDelaPerPageOptions" name="perpage" id="perpage">
+													  <option selected="selected" value="10">10</option>
+													  <option  value="20">20</option>
+													  <option  value="30">30</option>
+													  <option  value="50">50</option>
+													</select>
+											</div>											
+											<div class="paging">
+											  <p class="navigator1"><span class="label">Stran:</span> <a data-page="1" href="#" class="pageNum pagerLink">1</a><span class="pageNum dots">...</span><a data-page="93" href="#" class="pageNum pagerLink">93</a><a data-page="94" href="#" class="pageNum pagerLink">94</a><span class="pageNum selected">95</span><a data-page="96" href="#" class="pageNum pagerLink">96</a><span class="pageNum dots">...</span><a data-page="298" href="#" class="pageNum pagerLink">298</a> <a data-page="2" href="#" title="Naprej" alt="Naprej" class="button button1 noBorder iconnext pagerLink"><span>Naprej </span></a></p>
+											</div>
+										  </div>
+										  <div class="right"> 
+											<span class="label sort">Razvrsti po:</span>
+											<div class="prostaDelaSortOptions">
+												<span  data-id="1">novejših delih</span>
+												<span  data-id="3">najvišji urni postavki</span>
+											</div>
+										  </div>
+										</div>
+									  
+									</section>
+								  </div>
+								</form>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<footer class="footer" role="contentinfo">
+			<div class="footerWrap clear">
+				<div class="copyrights left">
+					<p class="logos"></p>
+					<p class="company">&copy; 2019 ŠS d.o.o</p>
+					<p class="links"><a href="http://www.studentski-servis.com/pogoji-poslovanja" target="_blank">Pravna obvestila</a> <small>|</small> <a href="http://www.studentski-servis.com/piskotki" target="_blank">Piškotki</a> <a href="http://www.studentski-servis.com/studentsko-delo" target="_blank">Za medije</a> <small>|</small> <span id="responsiveOnOff"><a href="" title="Izklopi širjenje strani"><span>Izklopi širjenje strani</span></a></span> <small>|</small> <a href="https://sl-si.facebook.com/e.studentski" target="_blank" class="iconFacebook">Spremljaj nas na Facebook-u</a></p>
+				</div>
+				<div class="right">
+					<p class="production">Produkcija: <a href="#">Creatim Ržišnik Perc</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div class="mobileMenu">
+		<div class="rp960">
+			<ul>
+				<li><a href="nastavitve.php"><i class="fa fa-user"></i><!--<i class="fa fa-close"></i>--> <small></small> <span>Moj profil</span></a></li>
+				<li><a href="#"><i class="fa fa-bars"></i><!--<i class="fa fa-close"></i>--> <small></small> <span>Odpri menu</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="mobileMenuBottom">
+		<div class="cols cols4 space1">
+			<ul>
+				<li><a href="potrebujem_napotnico.php"><i class="fa fa-file-text-o"></i> <span>Nova<br />napotnica</span></a></li>
+				<li><a href="moje_delo.php"><i class="fa fa-tag"></i> <span>Tvoja<br />dela</span></a></li>
+				<li><a href="pregled_zasluzkov.php"><i class="fa fa-money"></i> <span>Pregled<br />zaslužkov</span></a></li>
+				<li><a href="prosta_dela.php?kosarica=1"><i class="fa fa-star"></i> <span>Izbor<br />del</span></a></li>
+			</ul>
+		</div>
+	</div>
+</div>	
+<script type="text/javascript">
+	var __turnOnResponsive = 'Vklopi širjenje strani';
+	var __turnOffResponsive = 'Izklopi širjenje strani';
+</script>	
+</body>
+</html>
