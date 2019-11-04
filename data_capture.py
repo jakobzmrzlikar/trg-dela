@@ -72,15 +72,16 @@ def save_ads_to_csv(ad_list, directory, filename):
             li = ad.find_all('li')
             try:
                 attributes = [
-                    ad.find('span', class_='title').text.lower(), 
+                    ad.find('span', class_='title').contents[0].lower(),
                     # neto €/h
-                    ad.find('span', class_='postavka').text.split(' €')[0],
-                    ad.find('span', class_='lokacija').text.lower(),
-                    li[0].text.split(':')[1][1],            # st. prostih mest
-                    li[1].text.lower().split(':')[1][1:-3], # trajanje dela
-                    li[2].text.lower().split(':')[1][1:-2], # delovnik
-                    li[4].text.lower().split(':')[1][1:],   # narava dela
-                    ad.p.text                               # komentar
+                    ad.find('span', class_='postavka').text.split(' €')[0].strip(),
+                    ad.find('span', class_='lokacija').text.lower().strip(),
+                    li[0].text.split(':')[1][1].strip(),      # st. prostih mest
+                    li[1].text.lower().split(':')[1][:-1].strip(), # trajanje dela
+                    li[2].text.lower().split(':')[1][:-1].strip(), # delovnik
+                    li[3].text.lower().split(':')[1].strip(), # sifra
+                    li[4].text.lower().split(':')[1].strip(), # narava dela
+                    ad.p.text.replace('\n', '').strip()       # komentar
                 ]
             except:
                 continue
