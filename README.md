@@ -3,13 +3,16 @@ Trg dela
 Analiziral bom zaposlitvene oglase na strani:
 [studentski-servis](https://www.studentski-servis.com/ess/prosta_dela.php).
 
-Za vsak oglas bom zajel:
-* Vrsta dela
-* Regija
-* Delovnik
-* Narava dela (začasno delo ali polna zaposlitev)
-* Zaslužek
+oglasi.csv vsebujejo:
+* Vrsto dela
+* Urno postavko
+* Regijo
 * Št. prostih mest
+* Trajanje dela
+* Delovnik
+* Šifro oglasa
+* Naravo dela (začasno delo ali polna zaposlitev)
+* Komentar
 
 Delovne hipoteze:
 * Katere vrste dela imajo največji zaslužek?
