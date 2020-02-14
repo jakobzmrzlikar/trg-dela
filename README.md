@@ -18,3 +18,10 @@ Delovne hipoteze:
 * Vrste dela z najvišjo povprečno urno postavko so programerska dela.
 * Bolj gosto poseljene regije imajo višje povprečne urne postavke.
 * Obstaja očitna povezava med zaslužkom in delovnikom.
+
+# Navodila za uporabnike
+Uporaba je preprosta. Za pridobitev podatkov iz interneta samo poženete 
+```
+python data_capture.py
+```
+kar vam generira nabor podatkov `oglasi.csv` v mapi `data`. Natančna analiza teh podatkov se nahaja v `analiza.ipynb`.
