@@ -11,7 +11,6 @@ Brlapi==0.6.6
 certifi==2019.9.11
 chardet==3.0.4
 command-not-found==0.3
-cryptography==2.1.4
 cupshelpers==1.0
 cycler==0.10.0
 decorator==4.4.0
@@ -70,14 +69,12 @@ parso==0.5.1
 pep8==1.7.1
 pexpect==4.7.0
 pickleshare==0.7.5
-Pillow==5.1.0
 prometheus-client==0.7.1
 prompt-toolkit==2.0.10
 protobuf==3.0.0
 ptyprocess==0.6.0
 pycairo==1.16.2
 pycodestyle==2.5.0
-pycrypto==2.6.1
 pycups==1.9.73
 Pygments==2.4.2
 pygobject==3.26.1
@@ -92,8 +89,6 @@ python-apt==1.6.5+ubuntu0.2
 python-dateutil==2.8.0
 python-debian==0.1.32
 pytz==2019.3
-pyxdg==0.25
-PyYAML==3.12
 pyzmq==18.1.0
 qtconsole==4.5.5
 reportlab==3.4.0
