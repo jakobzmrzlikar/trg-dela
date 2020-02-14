@@ -21,7 +21,11 @@ Delovne hipoteze:
 
 # Navodila za uporabnike
 Uporaba je preprosta. Za pridobitev podatkov iz interneta samo poženete 
-```
+```python
 python data_capture.py
 ```
-kar vam generira nabor podatkov `oglasi.csv` v mapi `data`. Natančna analiza teh podatkov se nahaja v `analiza.ipynb`.
+kar vam generira nabor podatkov `oglasi.csv` v mapi `data`.
+
+Opomba: trenutno so oglasi.csv že naloženi, tako da ponovno poganjanje ni potrebno in bo podatke po nepotrebnem samo podvojilo.
+
+Natančna analiza teh podatkov se nahaja v `analiza.ipynb`.
