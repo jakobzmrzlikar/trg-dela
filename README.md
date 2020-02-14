@@ -15,6 +15,6 @@ oglasi.csv vsebujejo:
 * Komentar
 
 Delovne hipoteze:
-* Katere vrste dela imajo največji zaslužek?
-* Ali imajo bolj gosto poseljene regije višje zaslužke?
-* Ali obstaja povezava med zaslužkom in naravo dela
+* Vrste dela z najvišjo povprečno urno postavko so programerska dela.
+* Bolj gosto poseljene regije imajo višje povprečne urne postavke.
+* Obstaja očitna povezava med zaslužkom in delovnikom.
